@@ -1,0 +1,203 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 20-jun-2016, 11:36:50
+    Author     : victor
+*/
+
+body {padding: 10px 20px; font-family: Helvetica, sans-serif;}
+
+/*.menu ul {list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: darkslateblue;}
+.menu li {float: left;}
+.menu li a {color: white; display: block; text-align: center; padding: 14px 16px; text-decoration: none;}
+.menu li a:hover:not(.active) {background-color: darkblue;}*/
+.separador {clear: both;} 
+.separador2 {height: 0.5cm;}
+img.portada { width: 300px; height: 200px; border-radius: 50%; 
+float: right; margin: 50px;border: 1px solid black;} 
+
+/*calc() se utiliza para hacer operaciones matemáticas en css*/
+.contenedor {width: calc(100% - 10px); height: 400px; border: 5px groove blue;background-image: url("../Imagenes/photo-portada-tarot-vida.jpg");}
+div.texto h1 {color: white;text-align: left; margin-left: 30px;font-family: Helveltica, sans-serif;}
+/*div.texto h1, div.texto h2 {
+            -webkit-text-fill-color: white;
+            -webkit-text-stroke: 2px darkblue;}*/
+div.texto {text-shadow: -2px -2px 1px darkblue, 2px 2px 1px darkblue, -2px 2px 1px darkblue, 2px -2px 1px darkblue;}
+div.texto h2 {color: white;text-align: left; margin-left: 30px; margin-bottom: 0;}
+div.texto p {color: white; text-align: left; margin-left: 50px; margin-top: 0;/* text-shadow: -2px -2px 1px darkblue, 
+2px 2px 1px darkblue, -2px 2px 1px darkblue, 2px -2px 1px darkblue;*/}
+/* muestra solo los enlaces prev y next solo cuando el puntero está 
+sobre la imagen */
+#slider a {max-height: 400px; display: none;}
+#slider:hover a {display: block;}
+
+/*#slider1 {float: right;}*/
+
+.nivo-imageLink {display: none;}
+.portada {max-width: 300px; max-height: 300px;}
+
+/* esto sirve para ajustar la imagen ya que me salia una linea en blanco al cambiar la imagen de una a otra */
+img.nivo-main-image {top: -19px;}
+
+/*coloca el texto en la parte de arriba de la imagen y lo centra*/
+.nivo-caption { 
+    opacity: 1;
+    top: 0;
+    left: 10%;
+    text-align: center;   
+    width: 80%;}
+
+.nivo-caption { display: none; color: white; text-shadow: -2px -2px 1px black, 2px 2px 1px black,
+ -2px 2px 1px black, 2px -2px 1px black; }
+.nivo-caption h2 {color: white; }
+.nivo-caption .readmore a {box-shadow: -2px -2px 1px black, 2px 2px 1px black, -2px 2px 1px black, 2px -2px 1px black;}
+/*ajusta la imagen que se ve a 350px*/
+.nivo-slice img {height: 350px !important;}
+
+.readmore {margin: 20px;}
+.readmore a {border: 5px solid white; color: white; text-decoration: none; padding: 8px;}
+
+section.cajon {width: 100%; height: auto; display: block; overflow: hidden;}
+div.caja {width:48% ; height: auto; margin: 14px 2%; float: left;overflow: auto; }
+div.caja:nth-child(odd) {margin-left: 0;}
+div.caja:nth-child(even) {margin-right: 0;}
+div.contenido {width: 100%; height: auto; text-align: center; }
+div.enlace {width: 50px; margin: auto; margin-bottom: 10px; margin-top: 10px; }
+div.enlace a {border: 1px solid grey; padding: 5px;}
+div.caja img {max-width: 100%; height: auto;}
+
+article#informacion {text-align: center;}
+
+#formulario {width: 40%;margin: auto; }
+#informacion {color: darkslateblue;margin-left: 50px;margin-top: 1cm; font-size: 22px;}
+#informacion p:last-child {font-size: 18px;}
+h1 {text-align: center;color: darkslateblue;font-size: 45px;}
+input {padding: 5px; border: 1px inset gainsboro;}
+table {margin: 30px 50px;}
+th {text-align: left; color: darkslateblue;padding-top: 15px;}
+th label pre {font-family: helvetica, sans-serif; margin: 0;}
+
+h2 {color: darkslateblue; text-align: center; font-size: 40px; }
+div.slide-text {font-size: 25px;}
+/*article .center p {font-size: 25px; text-align: justify;}
+article .center p.centered {text-align: center;}
+article .center {width: 50%; height: auto; margin: auto;}*/
+
+/* para colocar las flechas de indicación de anterior y siguiente en el nivoslider*/
+span.anterior {display: inline-block; position: relative; transition: all 0.5s; }
+span.siguiente {display: inline-block; position: relative; transition: all 0.5s; }
+span.anterior:before {content: "\00AB"; opacity: 0; transition: 0.5s; position: absolute;top: 15px; }
+span.siguiente:after {content: "\00BB"; opacity: 0; transition: 0.5s; position: absolute;top: 15px; }
+span.anterior:hover:before {opacity: 1; left: 0; }
+span.siguiente:hover:after {opacity: 1; right: 0;}
+span.anterior:hover {padding-left: 20px; }
+span.siguiente:hover {padding-right: 20px; }
+span {padding: 15px;background-color: white; border: 1px solid green; outline: 3px solid white; }
+.texto h2 span {font-size: 60px;background-color: transparent;border: none; outline: none; }
+
+
+footer {background-color: slateblue; color:white; text-align: center; font-size: 20px; padding: 10px;}
+
+/*diseño del boton submit del formulario */
+.button {background-color: darkslateblue; color: white; padding: 10px 20px; display: inline-block; text-align: 
+center; margin: 5px 0px; border-radius: 4px;}
+.button:active {transform: translateX(4px);}
+
+div.container {width: 150px; height: 110px;/* background: radial-gradient( white 50%,blue ); 
+                text-align: center; position: relative; float: left;*/}
+div.center {/*position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);*/ font-size: 25px; 
+            font-weight: bolder; color: darkslateblue; text-align: justify; width: 50%; margin: auto;}
+.presentacion {color: darkslateblue; font-size: 28px;width: 60%; align-self: center; margin-top: 1cm;
+font-family:"Comic Sans MS", cursive;}
+.font {font-family:"Comic Sans MS", cursive; font-size: 28px;}
+/*.presentacion p {text-indent: 25px;}*/
+
+
+.flex-container {display: flex;display: -ms-flexbox; flex-flow: row nowrap; -ms-flex-flow: row nowrap;justify-content: space-between; 
+                 -ms-justify-content: space-between;}
+.flex-container2 {display: flex;display: -moz-flex;display: -webkit-flex;display: -ms-flexbox; flex-flow: column wrap;
+                 -ms-flex-flow: column wrap;-webkit-flex-flow: column wrap; -moz-flex-flow: column wrap;}
+.flex-menu {background-color: darkslateblue; }
+.flex-items {display: flex; display: -ms-flexbox; flex-flow: row wrap;
+            -ms-flex-flow: row wrap; margin: 10px; }
+.flex-item {padding: 0; display: flex; display: -ms-flexbox;/*background-color: rgba(128,128,255,0.4);
+    box-shadow: 16px 0 8px oldlace;*/ background-color: rgb(128,128,255); box-shadow: inset 12px 0 8px oldlace;}
+/*.flex-item:last-child {box-shadow: 0 0 0 darkslateblue;}*/
+.flex-p {flex-flow: row wrap;-webkit-flex-flow: row wrap; -moz-flex-flow: row wrap;-ms-flex-flow: row wrap;}
+.flex-p p {flex: 1 100%;-webkit-flex: 1 100%;-moz-flex: 1 100%;-ms-flex: 1 100%; text-align: right;}
+.flex-p p:first-child {margin-bottom: 0;}
+.flex-item a {/*background-color: rgba(72,61,139,0.4);*/ color: white;padding: 10px; font-size: 20px; 
+                           text-decoration: none; }
+.active {background-color: rgb(0,0,255); color: whitesmoke; font-size: 20px; text-decoration: none;
+box-shadow: inset 12px 0 8px oldlace;}
+.flex-item a:hover {border-bottom: 2px solid orange;box-sizing: border-box; padding: 10px 10px 8px 10px;}
+.contenedor {display: flex; display: -ms-flexbox;display: -webkit-flex;display: -moz-flex; flex-flow: row nowrap;
+            -webkit-flex-flow: row nowrap; -moz-flex-flow: row nowrap;-ms-flex-flow: row nowrap;}
+.nivoSlider {order: 1;-webkit-order: 1; -moz-order: 1;-ms-flex-order: 1;}
+.texto {flex: 2;-webkit-flex: 2; -moz-flex: 2;-ms-flex: 2;}
+.flex-container2 h1 {order: 1; -ms-flex-order: 1;}
+.flex-container2 .center {order: 2;-ms-flex-order: 2;}
+.flex-container2 #informacion {order: 3;-ms-flex-order: 3;}
+.flex-container2 #formulario {order: 4;-ms-flex-order: 4;}
+
+.text-center {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 25px; 
+            font-weight: bolder; color: darkslateblue;}
+.centered {text-align: center;}
+
+.bienvenida {order: 1;-ms-flex-order: 1; color: darkslateblue; -ms-align-self: center;}
+.clock {order: 2; -ms-flex-order: 2;color: white; background-color: darkslateblue; padding: 10px; font-weight: bolder;}
+
+.page404 {display: flex;display: -ms-flexbox;flex-flow: column wrap;-ms-flex-flow:column wrap; height: 100%; 
+         background-color: lightsteelblue;}
+.page404 > * {display: inline; margin: auto; padding: 20px;}
+
+@media screen and (max-width: 925px){
+    /*.contenedor {display: flex; flex-flow: row nowrap;}
+    .nivoSlider {order: 1;}*/
+    #slider1 .nivo-main-image {height: 250px !important; width: 250px !important; margin: 50px auto;}
+    .texto {flex: 1;-webkit-flex: 1; -moz-flex: 1; -ms-flex: 1;}
+    .texto h1 {font-size: 30px;}
+    .texto h2 {font-size: 25px;}
+    .texto h2 span {font-size: 40px;}
+}
+@media screen and (max-width: 480px){
+    .flex-container {display: flex;display: -webkit-flex;display: -moz-flex;display: -ms-flexbox; 
+                     flex-flow: column nowrap;-webkit-flex-flow: column nowrap; -moz-flex-flow: column nowrap;
+                     -ms-flex-flow: column nowrap;}
+    .flex-items {display: flex;display: -webkit-flex; display: -moz-flex;display: -ms-flexbox;flex-flow: row wrap;
+                 -webkit-flex-flow:row wrap; -moz-flex-flow: row wrap;-ms-flex-flow:row wrap; flex: 1 100%;
+                 -webkit-flex: 1 100%;-ms-flex: 1 100%;}
+    .flex-container2 {display: flex;display: -webkit-flex; display: -moz-flex;display: -ms-flexbox;
+                      flex-flow: column nowrap;-webkit-flex-flow: column nowrap; -moz-flex-flow: column nowrap;
+                      -ms-flex-flow:column nowrap;}
+    .contenedor {display: flex;display: -webkit-flex; display: -moz-flex;display: -ms-flexbox;
+                 flex-flow: column nowrap;-webkit-flex-flow: column nowrap; -moz-flex-flow: column nowrap;
+                 -ms-flex-flow:column nowrap; height: 800px;}
+    .nivoSlider {order: 1;-webkit-order: 1; -moz-order: 1; -msflex--order: 1; display: flex;display: -webkit-flex;
+                 display: -moz-flex; display: -ms-flexbox;flex-flow: row nowrap; -webkit-flex-flow: row nowrap;
+                 -moz-flex-flow: row nowrap;-ms-flex-flow:row nowrap;}
+    .nivo-main-image {margin: auto !important;}
+    .texto {order: 2;-webkit-order:2; -moz-order: 2;-ms-flex-order: 2;}
+    #slider1 .nivo-main-image {max-width: 150px !important;max-height: 150px !important;}
+    .nivoSlider {max-width: 100%; max-height: 250px;}
+    h1 {font-size: 30px;}
+    h2 {font-size: 30px;}
+    #slider .nivo-main-image {width: 100% !important; margin: 0; position: absolute !important;}
+    .nivo-directionNav {display: none;}
+    .readmore {display: flex;display: -webkit-flex; display: -moz-flex;display: -ms-flexbox; flex-flow: row nowrap;
+              -webkit-flex-flow: row nowrap; -moz-flex-flow: row nowrap;-ms-flex-flow: row nowrap;}
+    #informacion {margin: auto;}
+    #formulario {display: flex;display: -webkit-flex; display: -moz-flex; display: -ms-flexbox;flex-flow: row nowrap;
+                 -webkit-flex-flow: row nowrap;  -moz-flex-flow: row nowrap;-ms-flex-flow:row nowrap; margin: 0px;}
+    #formulario table {display: flex;display: -webkit-flex; display: -moz-flex; display: -ms-flexbox;
+                       flex-flow: row wrap;-webkit-flex-flow: row wrap; -moz-flex-flow: row wrap;
+                       -ms-flex-flow:row wrap;justify-content: space-around; -ms-justify-content: space-around; 
+                       -webkit-justify-content: space-around; -moz-justify-content: space-around; margin: auto;}
+    .flex-container2 .center {word-wrap: break-word; width: 80%;}
+    .flex-logo {justify-content: center;-ms-justify-content: center;}
+    
+    .clock {text-align: center;}
+}
